@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
+mlruns/
+.ipynb_checkpoints/
+data/raw/
+*.egg-info/

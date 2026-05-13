@@ -232,16 +232,3 @@ python src/explainability/shap_report.py --model_path models/churn_lgbm.pkl
 python src/monitoring/psi_monitor.py --reference data/train_scores.parquet --current data/recent_scores.parquet
 ```
 
----
-
-## Interview Talking Points
-
-**"Walk me through a churn model you built at scale."**
-
-> "At ERGO, I was responsible for deploying ML models for Prosegur across 8 countries. The churn model for Spain was underperforming, so I rebuilt it from the ground up — re-engineering features around engagement decay, payment trajectory, and product utilization patterns. I moved from a logistic regression to LightGBM with proper calibration, and performance improved by 30%. For a separate client, I built the first market-grade churn score from scratch, achieving a KS of 52 — which became the benchmark for the market. The key was making the model multi-geography-ready: same architecture, country-specific calibration and thresholds."
-
----
-
-## LinkedIn Description
-
-> Designed and deployed multi-country churn prediction systems for financial services clients across 8 countries. Achieved +30% performance improvement on Spain's churn model via gradient boosting (LightGBM, XGBoost) and feature re-engineering. Developed first-to-market churn score with KS=52. Implemented survival analysis for long-horizon attrition risk. Full ownership from feature design to regulatory documentation and business stakeholder presentation.
